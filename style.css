@@ -210,7 +210,7 @@ font-size: 50px;
       margin-bottom: 6px;
       padding: 0 18px 0 0px;
       box-sizing: border-box;
-      text-align: center;
+      text-align: center; 
     }
 
     .info-box {
@@ -494,12 +494,12 @@ font-size: 18px;
   }
 
   h1 {
-    font-size: 38px;
+    font-size: 34px;
     line-height: 1.2;
   }
 
   .categories div {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 800;
     padding: 6px;
   }
@@ -510,15 +510,15 @@ font-size: 18px;
   }
 
   .info-text2 {
-    font-size: 15px;
+    font-size: 17px;
     letter-spacing: 1px;
     margin-top: 3px;
-    margin-right: 23px;
+    margin-right: 25px;
   }
 
   .info-text3 {
-    font-size: 15px;
-    margin-right: 20px;
+    font-size: 14px;
+    margin-right: 24px;
   }
 
   .card-top {
@@ -531,8 +531,8 @@ font-size: 18px;
   }
 
   .label-box, .label-box1, .info-box {
-    font-size: 12px;
-    padding: 3px 0;
+    font-size: 13px;
+    padding: 5px 0;
   }
 
   body {
