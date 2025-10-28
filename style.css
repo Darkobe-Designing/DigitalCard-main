@@ -482,7 +482,7 @@ font-size: 18px;
     }
 
 /* 📱 موبایل (تا عرض 480px) */
-@media (max-width: 480px) {
+@media  (max-width: 374px) {
 
     .logo {
       width: 120px;
@@ -510,7 +510,65 @@ font-size: 18px;
   }
 
   .info-text2 {
-    font-size: 15px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-top: 3px;
+    margin-right: 25px;
+  }
+
+  .info-text3 {
+    font-size: 14px;
+    margin-right: 24px;
+  }
+
+  .card-top {
+    gap: 4px;
+  }
+
+  .row-cards .card {
+    flex: 1 1 auto;
+    max-width: 48%; /* نمایش دو کارت در هر ردیف */
+  }
+
+  .label-box, .label-box1, .info-box {
+    font-size: 13px;
+    padding: 5px 0;
+  }
+
+  body {
+    padding: 8px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
+ 
+    .logo {
+      width: 120px;
+      height: 120px; }
+
+    .logo img{
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: 46px;
+    line-height: 1.2;
+  }
+
+  .categories div {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 6px;
+  }
+
+  .info-text1 {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+  }
+
+  .info-text2 {
+    font-size: 17px;
     letter-spacing: 1px;
     margin-top: 3px;
     margin-right: 25px;
