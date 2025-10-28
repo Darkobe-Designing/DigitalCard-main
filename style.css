@@ -103,7 +103,7 @@ body {
 
     h1 {
       color: #ffd700;
-font-size: 50px;
+font-size: 35px;
     margin: 0;
       font-weight: 800;
       letter-spacing: 0.5px;
@@ -119,11 +119,11 @@ font-size: 50px;
     .categories div {
       background: linear-gradient(90deg, #ffd700, #ffb700);
       color: #002147;
-      padding: 10px;
+      padding: 10px 4px 10px 4px;
       margin: 8px 0;
       border-radius: 8px;
       font-weight: 800;
-      font-size: 22px;
+      font-size: 16px;
       cursor:pointer;
       box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
       transition:
@@ -255,30 +255,30 @@ font-size: 50px;
       transform: translateY(-50%) scale(1.1) rotate(5deg);
     }
         .info-text1 {
-      font-size: 26px;
-      font-weight: 800;
-      color: #002147;
-      width: 100%;
-      letter-spacing: 4px;
-    }
-
-        .info-text2 {    
       font-size: 20px;
       font-weight: 800;
       color: #002147;
       width: 100%;
-     letter-spacing: 2px;
+      letter-spacing: 2px;
+    }
+
+        .info-text2 {    
+      font-size: 16px;
+      font-weight: 800;
+      color: #002147;
+      width: 100%;
+     letter-spacing: 0px;
     margin-top: 6px;
-    margin-right: 23px;
+    margin-right: 21px;
     }
 
     .info-text3 {    
-font-size: 18px;
+font-size: 14px;
     font-weight: 800;
     color: #002147;
     width: 100%;
-    letter-spacing: 0.2px;
-    margin-right: 28px;
+    letter-spacing: 0px;
+    margin-right: 23px;
     }
 
     /* آیکون‌های سفارشی برای روبیکا و ایتا */
@@ -481,12 +481,12 @@ font-size: 18px;
       min-width: 130px;
     }
 
-/* 📱 موبایل (تا عرض 480px) */
-@media  (max-width: 374px) {
+/*  موبایل (تا عرض 480px)
+@media  (max-width: 361px) {
 
     .logo {
       width: 120px;
-      height: 120px; }
+      height: 120px; }    
 
     .logo img{
     width: 100%;
@@ -527,65 +527,7 @@ font-size: 18px;
 
   .row-cards .card {
     flex: 1 1 auto;
-    max-width: 48%; /* نمایش دو کارت در هر ردیف */
-  }
-
-  .label-box, .label-box1, .info-box {
-    font-size: 13px;
-    padding: 5px 0;
-  }
-
-  body {
-    padding: 8px;
-  }
-}
-
-/* @media (min-width: 375px) and (max-width: 480px) {
- 
-    .logo {
-      width: 120px;
-      height: 120px; }
-
-    .logo img{
-    width: 100%;
-    height: 100%;
-  }
-
-  h1 {
-    font-size: 46px;
-    line-height: 1.2;
-  }
-
-  .categories div {
-    font-size: 20px;
-    font-weight: 800;
-    padding: 6px;
-  }
-
-  .info-text1 {
-    font-size: 20px;
-    letter-spacing: 1.5px;
-  }
-
-  .info-text2 {
-    font-size: 17px;
-    letter-spacing: 1px;
-    margin-top: 3px;
-    margin-right: 25px;
-  }
-
-  .info-text3 {
-    font-size: 14px;
-    margin-right: 24px;
-  }
-
-  .card-top {
-    gap: 4px;
-  }
-
-  .row-cards .card {
-    flex: 1 1 auto;
-    max-width: 48%; /* نمایش دو کارت در هر ردیف */
+    max-width: 48%; /* نمایش دو کارت در هر ردیف 
   }
 
   .label-box, .label-box1, .info-box {
@@ -597,3 +539,4 @@ font-size: 18px;
     padding: 8px;
   }
 } */
+
