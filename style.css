@@ -380,8 +380,8 @@ h1 span {
   width: 100%;
   height: 100%;
   background-color: rgb(255, 255, 255); /* رنگ دلخواه */
-  -webkit-mask-image: url(FILE/Support\\(رسانیکا\).png);
-  mask-image: url(FILE/Support\\(رسانیکا\).png);
+  -webkit-mask-image: url(FILE/Support.png);
+  mask-image: url(FILE/Support.png);
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
@@ -406,8 +406,8 @@ h1 span {
   width: 100%;
   height: 100%;
   background-color: rgb(255, 255, 255); /* رنگ دلخواه */
-  -webkit-mask-image: url(FILE/Management\\(رسانیکا\).png);
-  mask-image: url(FILE/Management\\(رسانیکا\).png);
+  -webkit-mask-image: url(FILE/Management.png);
+  mask-image: url(FILE/Management.png);
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
