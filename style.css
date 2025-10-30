@@ -1,294 +1,328 @@
 @font-face {
-    font-family: 'YekanBakh';
-    src: url('YekanBakh-Bold.woff2') format('woff2'),
-         url('YekanBakh-Bold.woff') format('woff'),
-         url('YekanBakh-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "YekanBakh";
+  src: url("YekanBakh-Bold.woff2") format("woff2"),
+    url("YekanBakh-Bold.woff") format("woff"),
+    url("YekanBakh-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    font-family: 'YekanBakh', sans-serif;
+  font-family: "YekanBakh", sans-serif;
 }
 
+body {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-      box-sizing: border-box;
-    }
-    
-    * {
-      box-sizing: border-box;
-    }
+  margin: 0;
+  padding: 0;
+  background-color: #002147;
+  color: white;
+  direction: rtl;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
 
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #002147;
-      color: white;
-      direction: rtl;
-      font-weight: 400;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      text-rendering: optimizeLegibility;
-    }
+.animated-blob {
+  position: fixed;
+  border-radius: 50%;
+  opacity: 0.45;
+  filter: blur(16px);
+  z-index: -1;
+  pointer-events: none;
+  animation-timing-function: ease-in-out;
+}
 
-    .animated-blob {
-      position: fixed;
-      border-radius: 50%;
-      opacity: 0.45;
-      filter: blur(16px);
-      z-index: -1;
-      pointer-events: none;
-      animation-timing-function: ease-in-out;
-    }
+.blob1 {
+  width: 120px;
+  height: 120px;
+  background: #ffd700;
+  top: 10%;
+  left: 10%;
+  animation: blobMove1 5s infinite alternate;
+}
 
-    .blob1 {
-      width: 120px;
-      height: 120px;
-      background: #ffd700;
-      top: 10%;
-      left: 10%;
-      animation: blobMove1 12s infinite alternate;
-    }
+.blob2 {
+  width: 150px;
+  height: 150px;
+  background: #00c3ff;
+  top: 60%;
+  left: 70%;
+  animation: blobMove2 8s infinite alternate;
+}
 
-    .blob2 {
-      width: 150px;
-      height: 150px;
-      background: #00c3ff;
-      top: 60%;
-      left: 70%;
-      animation: blobMove2 14s infinite alternate;
-    }
+.blob3 {
+  width: 100px;
+  height: 100px;
+  background: #ffb700;
+  top: 40%;
+  left: 50%;
+  animation: blobMove3 3s infinite alternate;
+}
 
-    .blob3 {
-      width: 100px;
-      height: 100px;
-      background: #ffb700;
-      top: 40%;
-      left: 50%;
-      animation: blobMove3 16s infinite alternate;
-    }
+@keyframes blobMove1 {
+  0% {
+    top: 10%;
+    left: 10%;
+    transform: scale(1);
+  }
+  50% {
+    top: 15%;
+    left: 20%;
+    transform: scale(1.2);
+  }
+  100% {
+    top: 10%;
+    left: 30%;
+    transform: scale(1);
+  }
+}
+@keyframes blobMove2 {
+  0% {
+    top: 60%;
+    left: 70%;
+    transform: scale(1);
+  }
+  50% {
+    top: 65%;
+    left: 60%;
+    transform: scale(1.15);
+  }
+  100% {
+    top: 55%;
+    left: 80%;
+    transform: scale(1);
+  }
+}
+@keyframes blobMove3 {
+  0% {
+    top: 40%;
+    left: 50%;
+    transform: scale(1);
+  }
+  50% {
+    top: 45%;
+    left: 60%;
+    transform: scale(1.3);
+  }
+  100% {
+    top: 35%;
+    left: 40%;
+    transform: scale(1);
+  }
+}
 
-    @keyframes blobMove1 {
-      0% { top: 10%; left: 10%; transform: scale(1);}
-      50% { top: 15%; left: 20%; transform: scale(1.2);}
-      100% { top: 10%; left: 30%; transform: scale(1);}
-    }
-    @keyframes blobMove2 {
-      0% { top: 60%; left: 70%; transform: scale(1);}
-      50% { top: 65%; left: 60%; transform: scale(1.15);}
-      100% { top: 55%; left: 80%; transform: scale(1);}
-    }
-    @keyframes blobMove3 {
-      0% { top: 40%; left: 50%; transform: scale(1);}
-      50% { top: 45%; left: 60%; transform: scale(1.3);}
-      100% { top: 35%; left: 40%; transform: scale(1);}
-    }
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+}
 
-    .container {
-      max-width: 500px;
-      margin: 0 auto;
-      padding: 15px;
-      text-align: center;
-    }
+.logo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .logo {
-      width: 120px;
-      height: 120px;
-      margin: 0 auto 15px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;  }
+h1 {
+  color: #ffd700;
+  font-size: 35px;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
 
-    h1 {
-      color: #ffd700;
-font-size: 35px;
-    margin: 0;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    }
+h1 span {
+  color: #ffffff;
+  font-weight: 700;
+}
 
-    h1 span {
-      color: #ffffff;
-      font-weight: 700;
-    }
+/* دسته‌بندی‌ها */
+.categories div {
+  background: linear-gradient(90deg, #ffd700, #ffb700);
+  color: #002147;
+  padding: 10px 4px 10px 4px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
+  transition: background 0.5s ease, color 0.5s ease, transform 0.3s ease,
+    box-shadow 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
 
-    /* دسته‌بندی‌ها */
-    .categories div {
-      background: linear-gradient(90deg, #ffd700, #ffb700);
-      color: #002147;
-      padding: 10px 4px 10px 4px;
-      margin: 8px 0;
-      border-radius: 8px;
-      font-weight: 800;
-      font-size: 16px;
-      cursor:pointer;
-      box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
-      transition:
-      background 0.5s ease,
-        color 0.5s ease,
-        transform 0.3s ease,
-        box-shadow 0.5s ease;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      letter-spacing: 0.3px;
-      line-height: 1.4;
-    }
+.categories div::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.4),
+    transparent 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 1;
+}
 
-    .categories div::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.4), transparent 70%);
-      transform: scale(0);
-      transition: transform 0.5s ease;
-      border-radius: 8px;
-      pointer-events: none;
-      z-index: 1;
-    }
+.categories div:hover {
+  background: linear-gradient(90deg, #fff700, #ffa500);
+  color: #001f3f;
+  box-shadow: 0 0 20px #ffd700, 0 0 40px #ffa500;
+  transform: scale(1.05);
+}
 
-    .categories div:hover {
-      background: linear-gradient(90deg, #fff700, #ffa500);
-      color: #001f3f;
-      box-shadow: 0 0 20px #ffd700, 0 0 40px #ffa500;
-      transform: scale(1.05);
-    }
+.categories div:hover::before {
+  transform: scale(1);
+}
 
-    .categories div:hover::before {
-      transform: scale(1);
-    }
-
-    .logo img {
+.logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
 
-      letter-spacing: 1px;
-  
+  letter-spacing: 1px;
 }
 
+/* کارت‌ها */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 0;
+  text-decoration: none;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: inherit;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+}
 
-    /* کارت‌ها */
-    .card {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 12px 0;
-      text-decoration: none;
-      width: 100%;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-      color: inherit;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-      overflow: visible;
-    }
+.card:hover {
+  transform: scale(1.03);
+  z-index: 5;
+}
 
-    .card:hover {
-      transform: scale(1.03);
-      z-index: 5;
-    }
+.card-top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
+  padding: 0 18px 0 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
 
-    .card-top {
-      position: relative;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 6px;
-      padding: 0 18px 0 0px;
-      box-sizing: border-box;
-      text-align: center; 
-    }
+.info-box {
+  background-color: #a2e3f2;
+  height: 45px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  text-align: center;
+  color: #002147;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.2px;
+}
 
-    .info-box {
-      background-color: #a2e3f2;
-      height: 45px;
-      width: 100%;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 12px;
-      text-align: center;
-      color: #002147;
-      font-weight: 600;
-      font-size: 14px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      letter-spacing: 0.2px;
-    }
+.icon-circle {
+  position: absolute;
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #6dd5fa, #2980b9);
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(41, 128, 185, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
 
-    .icon-circle {
-      position: absolute;
-      right: 1px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 45px;
-      height: 45px;
-      background: linear-gradient(135deg, #6dd5fa, #2980b9);
-      border-radius: 50%;
-      box-shadow: 0 4px 15px rgba(41, 128, 185, 0.6);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      color: white;
-      transition: transform 0.3s ease;
-      z-index: 2;
-    }
+.icon-circle:hover {
+  transform: translateY(-50%) scale(1.1) rotate(5deg);
+}
+.info-text1 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #002147;
+  width: 100%;
+  letter-spacing: 2px;
+}
 
-    .icon-circle:hover {
-      transform: translateY(-50%) scale(1.1) rotate(5deg);
-    }
-        .info-text1 {
-      font-size: 20px;
-      font-weight: 800;
-      color: #002147;
-      width: 100%;
-      letter-spacing: 2px;
-    }
+.info-text2 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #002147;
+  width: 100%;
+  letter-spacing: 0px;
+  margin-top: 6px;
+  margin-right: 21px;
+}
 
-        .info-text2 {    
-      font-size: 16px;
-      font-weight: 800;
-      color: #002147;
-      width: 100%;
-     letter-spacing: 0px;
-    margin-top: 4px;
-    margin-right: 21px;
-    }
+.info-text3 {
+  font-size: 14px;
+  font-weight: 800;
+  color: #002147;
+  width: 100%;
+  letter-spacing: 0px;
+  margin-right: 23px;
+}
 
-    .info-text3 {    
-font-size: 14px;
-    font-weight: 800;
-    color: #002147;
-    width: 100%;
-    letter-spacing: 0px;
-    margin-right: 23px;
-    }
-
-    /* آیکون‌های سفارشی برای روبیکا و ایتا */
- .rubika-logo {   
+/* آیکون‌های سفارشی برای روبیکا و ایتا */
+.rubika-logo {
   width: 100%;
   height: 100%;
   padding: 9px;
   background: none;
   position: relative;
-
 }
 
 .rubika-logo img {
@@ -307,7 +341,7 @@ font-size: 14px;
   display: block;
   width: 100%;
   height: 100%;
-  }
+}
 
 .eitaa-logo {
   width: 100%;
@@ -346,12 +380,12 @@ font-size: 14px;
   width: 100%;
   height: 100%;
   background-color: rgb(255, 255, 255); /* رنگ دلخواه */
-  -webkit-mask-image: url(FILE/Support\ \(رسانیکا\).png);
-  mask-image: url(FILE/Support\ \(رسانیکا\).png);
+  -webkit-mask-image: url(FILE/Support\\(رسانیکا\).png);
+  mask-image: url(FILE/Support\\(رسانیکا\).png);
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
-  object-fit: cover
+  object-fit: cover;
 }
 
 .icon-m-png::before {
@@ -372,8 +406,8 @@ font-size: 14px;
   width: 100%;
   height: 100%;
   background-color: rgb(255, 255, 255); /* رنگ دلخواه */
-  -webkit-mask-image: url(FILE/Management\ \(رسانیکا\).png);
-  mask-image: url(FILE/Management\ \(رسانیکا\).png);
+  -webkit-mask-image: url(FILE/Management\\(رسانیکا\).png);
+  mask-image: url(FILE/Management\\(رسانیکا\).png);
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
@@ -385,140 +419,144 @@ font-size: 14px;
   height: 100%;
 }
 
-    /* لیبل پایین کارت */
-    .label-box1 {
-      background-color: #ffd700;
-      color: #002147;
-      padding: 6px 0;
-      border-radius: 6px;
-      font-weight: 700;
-      font-size: 12px;
-      text-align: center;
-      width: 100%;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
-      transition:
-        box-shadow 0.5s ease,
-        transform 0.3s ease;
-      letter-spacing: 0.2px;
-      line-height: 1.3;
-    }
+/* لیبل پایین کارت */
+.label-box1 {
+  background-color: #ffd700;
+  color: #002147;
+  padding: 6px 0;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
+  transition: box-shadow 0.5s ease, transform 0.3s ease;
+  letter-spacing: 0.2px;
+  line-height: 1.3;
+}
 
-    .label-box1::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.4), transparent 70%);
-      transform: scale(0);
-      transition: transform 0.5s ease;
-      border-radius: 6px;
-      pointer-events: none;
-      z-index: 1;
-    }
+.label-box1::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.4),
+    transparent 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+  border-radius: 6px;
+  pointer-events: none;
+  z-index: 1;
+}
 
-    .label-box1:hover::before {
-      transform: scale(1);
-    }
+.label-box1:hover::before {
+  transform: scale(1);
+}
 
-    /* لیبل پایین کارت */
-    .label-box {
-      background-color: #ffd700;
-      color: #002147;
-      padding: 6px 0;
-      border-radius: 6px;
-      font-weight: 700;
-      font-size: 12px;
-      text-align: center;
-      width: 100%;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
-      transition:
-        box-shadow 0.5s ease,
-        transform 0.3s ease;
-      letter-spacing: 0.2px;
-      line-height: 1.3;
-    }
+/* لیبل پایین کارت */
+.label-box {
+  background-color: #ffd700;
+  color: #002147;
+  padding: 6px 0;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5);
+  transition: box-shadow 0.5s ease, transform 0.3s ease;
+  letter-spacing: 0.2px;
+  line-height: 1.3;
+}
 
-    .label-box::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle at center, rgba(255,255,255,0.4), transparent 70%);
-      transform: scale(0);
-      transition: transform 0.5s ease;
-      border-radius: 6px;
-      pointer-events: none;
-      z-index: 1;
-    }
+.label-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.4),
+    transparent 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+  border-radius: 6px;
+  pointer-events: none;
+  z-index: 1;
+}
 
-    .label-box:hover::before {
-      transform: scale(1);
-    }
+.label-box:hover::before {
+  transform: scale(1);
+}
 
-    /* ردیف کارت‌های دو تا کنار هم */
-    .row-cards {
-      display: flex;
-      gap: 13px;
-      justify-content: center;
-      margin: 12px 0;
-      flex-wrap: wrap;
-    }
+/* ردیف کارت‌های دو تا کنار هم */
+.row-cards {
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+  margin: 12px 0;
+  flex-wrap: wrap;
+}
 
-    .row-cards .card {
-      flex: 1 1 calc(50% - 8px);
-      max-width: calc(50% - 8px);
-      margin: 0;
-      min-width: 130px;
-    }
+.row-cards .card {
+  flex: 1 1 calc(50% - 8px);
+  max-width: calc(50% - 8px);
+  margin: 0;
+  min-width: 130px;
+}
 
-/*  موبایل (تا عرض 480px)
-@media  (max-width: 361px) {
+/* استایل مخصوص دسکتاپ‌ها (رزولوشن استاندارد) */
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
 
-    .logo {
-      width: 120px;
-      height: 120px; }    
-
-    .logo img{
+  .logo img {
     width: 100%;
     height: 100%;
   }
 
   h1 {
-    font-size: 34px;
+    font-size: 50px;
     line-height: 1.2;
   }
 
   .categories div {
-    font-size: 15px;
+    font-size: 22px;
     font-weight: 800;
     padding: 6px;
   }
 
   .info-text1 {
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 1.5px;
   }
 
   .info-text2 {
-    font-size: 17px;
-    letter-spacing: 1px;
+    font-size: 18px;
+    letter-spacing: 3px;
     margin-top: 3px;
-    margin-right: 25px;
+    margin-right: 23px;
   }
 
   .info-text3 {
-    font-size: 14px;
-    margin-right: 24px;
+    font-size: 15px;
+    margin-right: 20px;
   }
 
   .card-top {
@@ -527,16 +565,13 @@ font-size: 14px;
 
   .row-cards .card {
     flex: 1 1 auto;
-    max-width: 48%; /* نمایش دو کارت در هر ردیف 
+    max-width: 48%; /* نمایش دو کارت در هر ردیف */
   }
 
-  .label-box, .label-box1, .info-box {
-    font-size: 13px;
+  .label-box,
+  .label-box1,
+  .info-box {
+    font-size: 14px;
     padding: 5px 0;
   }
-
-  body {
-    padding: 8px;
-  }
-} */
-
+}
